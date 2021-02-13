@@ -8,4 +8,10 @@ const server = express()
 server.use(express.json())
 server.use(postsRouter)
 
+server.get("/", (req, res) => {
+  res.json({
+    message: "Welcome to Blog API"
+  })
+})
+
 module.exports = server
