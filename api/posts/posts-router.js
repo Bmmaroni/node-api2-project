@@ -115,3 +115,5 @@ router.get("/api/posts/:id/comments", (req, res) => {
         }) 
        })
 })
+
+module.exports = router
